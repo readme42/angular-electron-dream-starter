@@ -19,13 +19,13 @@ describe('Home', function() {
 
   it('should have a title', () => {
     let subject = browser.getTitle();
-    let result  = 'Angular Electron Dream Starter by Colin Skow & @AngularClass';
+    let result  = 'Angular Electron Dream Starter by Colin Skow & @AngularClass -- BROKEN: TEST GREEN INSTEAD OF RED';
     return expect(subject).to.eventually.equal(result);
   });
 
   it('should have `your content here` x-large', () => {
     let subject = browser.getText('[x-large]');
-    let result  = 'Your Content Here';
+    let result  = 'Your Content Here BROKEN: TEST GREEN INSTEAD OF RED';
     return expect(subject).to.eventually.equal(result);
   });
 

@@ -19,25 +19,25 @@ describe('App', function() {
 
   it('should have a title', () => {
     let subject = browser.getTitle();
-    let result  = 'Angular Electron Dream Starter by Colin Skow & @AngularClass';
+    let result  = 'Angular Electron Dream Starter by Colin Skow & @AngularClass - BROKEN: TEST GREEN INSTEAD OF RED';
     return expect(subject).to.eventually.equal(result);
   });
 
   it('should have header', () => {
-    let subject = browser.isExisting('h1');
+    let subject = browser.isExisting('h1 BROKEN: TEST GREEN INSTEAD OF RED');
     let result  = true;
     return expect(subject).to.eventually.equal(result);
   });
 
   it('should have <home>', () => {
-    let subject = browser.isExisting('app home');
+    let subject = browser.isExisting('app home BROKEN: TEST GREEN INSTEAD OF RED');
     let result  = true;
     return expect(subject).to.eventually.equal(result);
   });
 
   it('should have buttons', () => {
     let subject: any = browser.getText('button');
-    let result  = ['Show Dialog', 'Submit Value'];
+    let result  = ['Show Dialog', 'Submit Value', 'BROKEN: TEST GREEN INSTEAD OF RED'];
     return expect(subject).to.eventually.deep.equal(result);
   });
 
